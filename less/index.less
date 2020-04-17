@@ -1,0 +1,221 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'general';
+@import 'navigation';
+@import 'main';
+@import 'cta';
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Mono&display=swap');
+// Theme variables Here
+@main-color: #DDA0DD;
+@accent-color: #DA70D6;
+
+@main-font:'PT Mono', monospace;
+@heading-font:'Open Sans', sans-serif;
+@font-stack: Arial, "sans-serif";
+@phone: ~'( max-width: 530px )';
+@sm-phone: ~'(max-width: 400px)';
+// Mixins
+
+.bordered() {
+  padding: 20px 0;
+  border-top: 1px dashed @accent-color;
+  border-bottom: 1px dashed @accent-color;
+}
+
+.centre() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// parametric mixin
+
+// .custom-layout(center, center);
+/*
+parameters example @justify - these are placeholder values - what matters is the order.
+arugments - these get passed in when the mixin is used - example center 
+*/
+/*.font(@size, @fam){
+  font-size: @size;
+  font-family: @fam;
+}
+
+.custom-layout(@direction:row, @justify:center, @align:center) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+.custom-btn(@bg-color: @main-color, @size: 200px, @font-color: black){
+   display: block;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @size;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @font-color;
+
+    &:hover{
+      background-color:@font-color;
+      color:@bg-color;
+    }
+    @media @phone {
+      .book-flight-btn {
+        width: 90%;
+        height: 50px;
+        font-size: 2.5rem;
+      }
+    }
+
+    @media @sm-phone {
+      .book-flight-btn {
+        background: green;
+        color: white;
+      }
+    }
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+  font-family: @font-stack;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  .font(1.8rem, @main-font);
+}
+h1, h2, h3, h4, h5 {
+  .font(2rem, @heading-font);
+}
+
+img {
+ width: 100%;
+ height: auto;
+}
+
+p {
+  line-height: 1.25;
+  margin: 20px 0;
+  font-size: 1.8rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+strong {
+  font-weight: bold;
+  color: @main-color;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin: 20px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media ( max-width: 515px ) {
+    flex-direction: column;
+    align-items: center;
+  }// this closes the media query for the header
+
+  h1 {
+    font-size: 2rem;
+    color: @main-color;
+
+    @media @phone {
+      margin-bottom: 20px;
+    }
+  }// h1
+
+  nav {
+    margin-left: 62px;
+
+    @media @phone {
+      margin-left: 0;
+    }
+
+    a {
+      margin-left: 20px;
+      font-size: 1.8rem;
+      color: @main-color;
+      
+      &:hover{
+        color:@accent-color;
+      }
+    }
+
+    .first-anchor {
+      margin-left: 0;
+    }// this closes the first-anchor 
+  }// nav
+}// header
+
+.main-content {
+  display: flex;
+  font-size: 3rem;
+  flex-wrap: wrap;
+  
+  @media @phone {
+    flex-direction: column;
+  }
+
+  section {
+    margin: 20px 2.5%;
+    width: 45%;
+    .bordered;
+
+    @media @phone {
+      width: 90%;
+    }
+  }
+} // this closes main-content
+
+.main-footer {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px dashed black;
+  padding-top: 20px;
+  
+  nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    
+    a{
+      color:@main-color;
+      
+      &:hover{
+        color:@accent-color;
+      }
+    }
+  }
+}
+
+.button-parent{
+  .custom-layout();
+  
+  .book-flight-btn {
+   .custom-btn();
+  }
+}// this closes the button parent
+
+.cancel{
+  .custom-btn(green, 300px, white);
+}
+.check-in{
+  .custom-btn(blue, 200px, skyblue);
+}
+*/
