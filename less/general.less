@@ -2,6 +2,8 @@ body {
     margin: 0% 10%;
 }
 
+// Welcome Section
+
 .title-container {
     background-image: url("/assets/home.png");
     width: 90%;
@@ -12,28 +14,26 @@ body {
 
     .TitleSection {
         padding-top: 20%;
-        display: flex;
-        flex-direction: column;
+        .FlexSetup(column);
 
         a {
-            margin-top: 1%;
-            text-align: center;
-            background-color: white;
-            border-radius: 5px;
-            font-size: 2.0em;
-            text-decoration: none;
-            color: black;
+            .Link(white; center);
             width: 15%;
-            margin-left: 45%;
-
         }
     }
 
+    .btnContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
     .TitleSectionHeader {
-        .HeaderFontSize(black);
+        .HeaderFontSize(black; 3.5em);
+        width: 100%;
+        justify-content: center;
         text-align: center;
-        width: 35%; 
-        margin-left: 36%;
     }
 }
 
@@ -46,17 +46,62 @@ body {
 }
 
 .artists-container {
+    .FlexSetup(row);
     padding-top: 2%;
-    display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
 }
 
 
 .artist1 {
-    .Artist()
+    .Artist();
 }
 
 .artist2 {
-    .Artist()
+    .Artist();
+}
+
+
+
+// Media
+@media (max-width: 1052px) {
+    .title-container {
+        background-image: url("/assets/home.png");
+        width: 90%;
+        height: 70vh;
+        margin-left: 5%;
+        padding-bottom: 2%;
+    
+    
+        .TitleSection {
+            padding-top: 20%;
+            .FlexSetup(column);
+    
+            a {
+                .Link(white; center);
+                width: 25%;
+            }
+        }
+    }
+}
+
+// 611
+@media (min-width: 611px) {
+    .title-container {
+        background-image: url("/assets/home.png");
+        width: 90%;
+        height: 70vh;
+        margin-left: 5%;
+        padding-bottom: 2%;
+    
+    
+        .TitleSection {
+            padding-top: 20%;
+            .FlexSetup(column);
+    
+            a {
+                .Link(white; center);
+                width: 35%;
+            }
+        }
+    }
 }
