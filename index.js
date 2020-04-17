@@ -252,8 +252,8 @@ function removeArtist(artists, id) {
     /* code here */
     //create a loop
     let first = artists[0];
-    let 
-    for (index=0; index<artists.length; index++){
+     
+    for (let index=0; index<artists.length; index++){
 
       //then at item x, it .pop that data from index
 
@@ -276,7 +276,7 @@ function get20s(artists){
 
     let artist20Cent = []; //establish the empty array
 
-    for (index=0; index<artists.length; index++) //set up loop
+    for (let index=0; index<artists.length; index++) //set up loop
     
     {//now, create the action so it moves items into the array ie. push
       artist20Cent.push(artists[index].artist20Cent);
@@ -295,15 +295,19 @@ function lotsOfArt(artists){
 
   let moreThan100 = [];
   //then i need to run a loop that pushes those artists into a list
-  for (index=0; index<artists.length; index++) //set up loop
+  for (let index=0; index<artists.length; index++) //set up loop
 {//now, create the action so it moves items into the array ie. push
+
+  //as it goes through the loop IF it finds 100+paintings then push no else needed
+if ()
+
   moreThan100.push(artists[index].moreThan100);
 }
   //then i need to return the list
-    /* Code here */
+    console.log (moreThan100);
 
   }
-
+console.log (lotsOfArt())
 
 /* Task 7: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
@@ -314,20 +318,46 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+// WHAT IS THIS ASKING ME TO DO? ITS ASKING ME TO TAKE THE BIG LIST AND ADD A NEW DATA SET (ME) TO THE LIST
+function addArtist(artists){
 
     /* Code here */
+    const myInfo = [ 
+      {"id": "21",
+      'name': "Vickie Nelson",
+      "years": "1974 - 2020",
+      "genre": "Web Design", 
+      "nationality": "Puerto Rican", 
+      "bio": "UX designer turned Web developer. Former professional singer-songwriter in Nashville, TN."}
+    ]
+
+      const modifiedArtists = artists.concat(myInfo);
+
+      console.log (modifiedArtists);
 
   }
 
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-function checkArtist(/* Code here */){
+function checkArtist(artists){
 
-    /* Code here */
+  const checkForArtist = [''];
+  //opens loop
+  for (let index=0; index<artists.length; index++){
 
-  }
+    if (artists[index] ===`{name}`){
+      checkArtist.push('in the dataset');
+    } //closes if
+
+    else {
+      checkArtist.push('not in dataset');
+    } //closes else
+
+  } //closes loop
+
+    return checkForArtist;
+  } //closes function
 
 
 

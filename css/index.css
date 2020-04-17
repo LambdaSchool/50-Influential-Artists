@@ -334,9 +334,8 @@ video *:afer
 
 *{  
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
-  
 }
+
 *:before, *:afer {
 	box-sizing: inherit;
 }
@@ -345,7 +344,9 @@ html {
   font-size: 62.5%;
 }
 
-#fullpage {
+/* applied border to body for reference */
+
+body {
 width: 900px;
 border: 2px solid red;
 margin-left: 15%;
@@ -353,18 +354,21 @@ margin-left: 15%;
 
 h1 {
   font-size: 6.0rem;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   color: #F9F9F9;
   text-shadow: 2px, 2px black;
 }
-h2 {
-  font-size: 5.6rem;;
+h2, a{
+  margin-top: 1.5%;
+  margin-left: 7%;
+  font-size: 2.0rem;
+  font-family: 'Raleway', sans-serif;  
 }
 
 nav div{
   margin: 0.5;
   font-family: 'Raleway', sans-serif;
-  color:@shark;
+  color:green;
   padding: 2%;
   border-right: 1px solid gray;
   line-height: 10px;
@@ -382,6 +386,7 @@ nav div{
 
 }
 .title-container {
+  border: 2px solid red;
   height: 500px;
   width: 800px;
   margin-top: 2%;
@@ -399,12 +404,12 @@ nav div{
 
 .top-container {
   display: flex;
+  flex-direction: ;
   justify-content: center;
   border-bottom: 1px solid lightgray;
   margin-bottom: 5%;
   
 }
-
 
 .button button{
   width: 150px;
@@ -416,22 +421,47 @@ nav div{
   border-radius: 4px;
 }
 
+
+
 .artists-container {
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 5%;
-;
+  
+}
+/* all divs with class of artist */
+div.artist {
+  border: 8px solid purple;
+  width:900px;
 }
 
-.artists-container div{
-  width: 250px;
-  height: 200px;
-  margin-right: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-content: space-around;
+img {
+width: 350px;
+}
+
+.artist1 {
+  margin-bottom: 2%;
+  margin-left: 6%;
   
 }
 
+.bio1 {
+  width: 60%;
+  margin-top: 2%;
+  margin-left: 3%;
+  text-align: center;
+  display:flex;
+  align-content: center;
+}
+
+.bio2 {
+  width: 60%;
+  margin-top: 2%;
+  
+  text-align: center;
+  display:flex;
+  align-content: center;
+
+}
+
+.bio2 h2,a{
+  margin-left: 0;
+}
