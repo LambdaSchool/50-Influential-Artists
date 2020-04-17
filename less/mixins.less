@@ -1,1 +1,17 @@
 // Mixins in here
+
+.flexit() {
+    @direction:row, @justify:space-between, @align:center;
+}
+
+.body-font() {
+    @main-font, font-weight: bold 
+};
+
+.button-class {
+    background-color: @golden;
+    
+    &:hover{
+        background-color: lighten(@golden,80%);
+    }
+}    
