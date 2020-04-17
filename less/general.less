@@ -1,25 +1,89 @@
 
 //General styles
 
-html, body{
-  font-family:'Raleway', sans-serif;
+html {
+  font-size: 62.5%;
 }
 
-* {
-  box-sizing: border-box;
+body {
+  color: @body-font-color;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
 }
 
-//   html {
-//     font-size: 62.5%;
-//   }
 
-.bio {
-  line-height: 1.5;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
+// Links
+
+a {
+  color: @link-font-color;
+  text-decoration: underline;
+
+  &:hover {
+      color: @link-hover-font-color;
+  }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+
+// Headings 
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+/* Buttons */
+
+.btn {
+  .create-button();
+}
+
+#artist {
+  display: flex;
+  flex-direction: column;
+  padding-top: @basic-gutter;
+  margin-left: @basic-gutter;
+  margin-right: @basic-gutter;
+  .add-border(top);
+
+  @media @tablet {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .arts {
+          width: 45%;
+          margin-right: @basic-gutter;
+      }
+  }
+  
+  .arts {
+      margin-bottom: @basic-gutter;
+
+      .pic {
+          display: block;
+          overflow: hidden;
+
+          img {
+              height: 32rem;
+          }
+      }
+  }
 }
