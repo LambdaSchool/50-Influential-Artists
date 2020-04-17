@@ -353,8 +353,9 @@ margin-left: 15%;
 
 h1 {
   font-size: 6.0rem;
-  color:red;
-  /* need to change text color once moved on top of back */
+  font-family: 'Raleway';
+  color: #F9F9F9;
+  text-shadow: 2px, 2px black;
 }
 h2 {
   font-size: 5.6rem;;
@@ -384,16 +385,26 @@ nav div{
   height: 500px;
   width: 800px;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg);
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
+
 .button {
   display: flex;
   justify-content: center;  
 }
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 5%;
+  
+}
+
 
 .button button{
   width: 150px;
@@ -403,9 +414,24 @@ nav div{
   align-items: center;
   font-size: 1.6rem;
   border-radius: 4px;
+}
 
+.artists-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+;
+}
 
-.top-container {
-  margin-left: 5%;
+.artists-container div{
+  width: 250px;
+  height: 200px;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-around;
   
 }
+
