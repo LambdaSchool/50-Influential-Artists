@@ -330,12 +330,82 @@ summary *:afer,
 time *:afer,
 mark *:afer,
 audio *:afer,
-video *:afer {
-  box-sizing: inherit;
-}
-* {
+video *:afer 
+
+*{  
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  
 }
+*:before, *:afer {
+	box-sizing: inherit;
+}
+
 html {
   font-size: 62.5%;
+}
+
+#fullpage {
+width: 900px;
+border: 2px solid red;
+margin-left: 15%;
+}
+
+h1 {
+  font-size: 6.0rem;
+  color:red;
+  /* need to change text color once moved on top of back */
+}
+h2 {
+  font-size: 5.6rem;;
+}
+
+nav div{
+  margin: 0.5;
+  font-family: 'Raleway', sans-serif;
+  color:@shark;
+  padding: 2%;
+  border-right: 1px solid gray;
+  line-height: 10px;
+}
+
+.top-nav nav{
+  margin: 3%;
+  height: 10px;
+  font-family: 'Raleway';
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+}
+.title-container {
+  height: 500px;
+  width: 800px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  justify-content: center;  
+}
+
+.button button{
+  width: 150px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  border-radius: 4px;
+
+
+.top-container {
+  margin-left: 5%;
+  
 }
