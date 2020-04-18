@@ -1,17 +1,34 @@
 // Mixins in here
 
-.flexit() {
-    @direction:row, @justify:space-between, @align:center;
+.font-fam(@size) {
+  font-family: "Raleway", sans-serif;
+  font-size: @size;
 }
 
-.body-font() {
-    @main-font, font-weight: bold 
-};
+.button-class() {
+  background-color: @golden;
 
-.button-class {
-    background-color: @golden;
-    
-    &:hover{
-        background-color: lighten(@golden,80%);
-    }
-}    
+  &:hover {
+    background-color: @btn-hover;
+  }
+}
+
+.flex-it (@direction, @justify) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+}
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-active() {
+  color: @shark;
+
+  &:hover {
+    color: @golden;
+  }
+}

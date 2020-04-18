@@ -279,11 +279,19 @@ function get20s(artists){
     for (let index=0; index<artists.length; index++) //set up loop
     
     {//now, create the action so it moves items into the array ie. push
-      artist20Cent.push(artists[index].artist20Cent);
-    }
+      
+      
+      if (artists[index].years = 1800 && < 1999)  {
+        
+        artists20Cent.push(artists[index].artist20Cent);
+ 
+        return artist20Cent
+ 
+      }
 
-    return artist20Cent
   }
+
+
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
@@ -299,15 +307,15 @@ function lotsOfArt(artists){
 {//now, create the action so it moves items into the array ie. push
 
   //as it goes through the loop IF it finds 100+paintings then push no else needed
-if ()
+if (artists[index].paintings >=100){
+  moreThan100.push(artists.name);
+}
 
   moreThan100.push(artists[index].moreThan100);
 }
-  //then i need to return the list
-    console.log (moreThan100);
+return moreThan100;
 
   }
-console.log (lotsOfArt())
 
 /* Task 7: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 

@@ -333,59 +333,61 @@ audio *:afer,
 video *:afer {
   box-sizing: inherit;
 }
-
-*{  
-  box-sizing: border-box;
-}
-
-*:before, *:afer {
-	box-sizing: inherit;
-}
-
 html {
+  box-sizing: border-box;
   font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
 }
-
-/* applied border to body for reference */
-
-body {
-width: 900px;
-border: 2px solid green;
-margin-left: 15%;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-
-h1 {
-  font-size: 6.0rem;
-  font-family: 'Raleway', sans-serif;
-  color: #F9F9F9;
-  text-shadow: 2px, 2px black;
+​ body {
+  width: 900px;
+  margin-left: 15%;
+  color: #212529;
+  border-color: green;
 }
-h2, a{
-  margin-top: 1.5%;
-  margin-left: 7%;
-  font-size: 2.0rem;
-  font-family: 'Raleway', sans-serif;  
+.text-button h1 {
+  font-size: 60px;
+  font-family: "Raleway", sans-serif;
+  color: #f9f9f9;
 }
-
-nav div{
-  margin: 0.5;
-  font-family: 'Raleway', sans-serif;
-  color:green;
-  padding: 2%;
-  border-right: 1px solid gray;
-  line-height: 10px;
+h2 {
+  font-size: 5.6rem;
 }
-
-.top-nav nav{
-  margin: 3%;
-  height: 10px;
-  font-family: 'Raleway';
-  font-size: 1.6rem;
+.title-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
-
+  align-items: center;
+}
+p {
+  color: #212529;
+}
+a {
+  margin-top: 1.5%;
+  margin-left: 7%;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+.top-nav {
+  margin-bottom: 5%;
+}
+.top-nav nav {
+  margin: 3%;
+  height: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+.top-nav nav div {
+  margin: 0.5;
+  font-family: "Raleway", sans-serif;
+  color: #212529;
+  padding: 2%;
+  border-right: 1px solid gray;
+  line-height: 10px;
 }
 .title-container {
   border: 2px solid red;
@@ -394,76 +396,20 @@ nav div{
   margin-top: 2%;
   margin-bottom: 5%;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg);
+}
+.text-button {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
-
-.button {
+.text-button .button {
   display: flex;
-  justify-content: center;  
-}
-
-.top-container {
-  display: flex;
-  flex-direction: ;
+  flex-direction: row;
   justify-content: center;
-  border-bottom: 1px solid lightgray;
-  margin-bottom: 5%;
-  
 }
-
-.button button{
-  width: 150px;
+.button button {
+  width: 250px;
   height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.6rem;
-  border-radius: 4px;
-}
-
-
-
-.artists-container {
-  display: flex;
-  
-}
-/* all divs with class of artist */
-div.artist {
-  border: 8px solid purple;
-  width:900px;
-}
-
-img {
-width: 350px;
-}
-
-.artist1 {
-  margin-bottom: 2%;
-  margin-left: 6%;
-  
-}
-
-.bio1 {
-  width: 60%;
-  margin-top: 2%;
-  margin-left: 3%;
-  text-align: center;
-  display:flex;
-  align-content: center;
-}
-
-.bio2 {
-  width: 60%;
-  margin-top: 2%;
-  
-  text-align: center;
-  display:flex;
-  align-content: center;
-
-}
-
-.bio2 h2,a{
-  margin-left: 0;
+  border-radius: 8px;
+  border: 0.5px solid #212529;
 }
