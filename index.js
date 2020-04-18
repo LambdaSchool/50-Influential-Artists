@@ -257,35 +257,59 @@ console.log(removeArtist(artists[9]))
 
 /* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */){
-
-    /* Code here */
-
+function get20s(data){
+  let result = [];
+  // New array with final results
+  for(let i = 0; i < data.length; i++){
+    //Loop through given array
+    let converted = parseInt(data[i].years);
+    // This converts the first number of the string stored to the key 'years' into an integer
+    // Second number of years wont matter since we are checking for birth dates
+    if(converted >= 1800 && converted <= 1900){
+      //If converted string is between 1800 and 1900 add the name of the current index to the result array
+      result.push(data[i].name);
+    }
   }
+  return result;
+}
+console.log(get20s(artists));
+
+  
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(artist) {
+  let x = [];
 
-    /* Code here */
+  for (let i=0; i<artist.lenth; i++){
 
-  }
+
+if (artist[i].paintings>100){
+  x.push(artist[i.name]);
+}
+}
+return x;
+}
 
 
 /* Task 7: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
 id: 21
-name: Your Name Here, 
+name: Your Name Here
 years: Your Birth Year - current day,
 genre: Web Design, 
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(id, name, years, genre,nationality, bio){
+  let newArtist= {id,name,years,genre, nationality, bio}
+  
+  artists.push(newArtist);
+  console.log ('Shanna Hullaby','1986-Present' , 'Web Design', 'American','Shanna does not like green eggs and ham and all that' );
 
-    /* Code here */
 
-  }
+console.log (artists);
+  
 
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
