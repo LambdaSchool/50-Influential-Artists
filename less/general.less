@@ -1,0 +1,107 @@
+body {
+    margin: 0% 10%;
+}
+
+// Welcome Section
+
+.title-container {
+    background-image: url("/assets/home.png");
+    width: 90%;
+    height: 70vh;
+    margin-left: 5%;
+    padding-bottom: 2%;
+
+
+    .TitleSection {
+        padding-top: 20%;
+        .FlexSetup(column);
+
+        a {
+            .Link(white; center);
+            width: 15%;
+        }
+    }
+
+    .btnContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    .TitleSectionHeader {
+        .HeaderFontSize(black; 3.5em);
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+// Artist Section
+
+.Spacer {
+    border-bottom: 1px solid black;
+    height: 5vh;
+}
+
+.artists-container {
+    .FlexSetup(row);
+    padding-top: 2%;
+    justify-content: space-evenly;
+}
+
+
+.artist1 {
+    .Artist();
+}
+
+.artist2 {
+    .Artist();
+}
+
+
+
+// Media
+@media (max-width: 1052px) {
+    .title-container {
+        background-image: url("/assets/home.png");
+        width: 90%;
+        height: 70vh;
+        margin-left: 5%;
+        padding-bottom: 2%;
+    
+    
+        .TitleSection {
+            padding-top: 20%;
+            .FlexSetup(column);
+    
+            a {
+                .Link(white; center);
+                width: 25%;
+            }
+        }
+    }
+}
+
+// 611
+@media (min-width: 611px) {
+    .title-container {
+        background-image: url("/assets/home.png");
+        width: 90%;
+        height: 70vh;
+        margin-left: 5%;
+        padding-bottom: 2%;
+    
+    
+        .TitleSection {
+            padding-top: 20%;
+            .FlexSetup(column);
+    
+            a {
+                .Link(white; center);
+                width: 35%;
+            }
+        }
+    }
+}

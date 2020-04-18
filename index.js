@@ -208,9 +208,27 @@ const artists = [
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
 
+function FirstArtist(arr, index) {
+  // console.log(arr[index].name);
+}
 
+FirstArtist(artists, 0);
+
+function BioOfThirdArtist(arr, index) {
+  //  console.log(arr[index].bio);
+}
+
+BioOfThirdArtist(artists, 2);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+function VincentTypoFix(arr, index) {
+  if (arr[index].name = "Vincent Van Dough") {
+    arr[index].name = "Vincent Van Gogh";
+    // console.log(arr[index].name);
+  }
+}
+
+VincentTypoFix(artists, 8);
 
 
 
@@ -222,13 +240,18 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-    /* code here */
+function getArtistByIndex(arr, index) {
+    const Name = arr[index].name;
+    const ID = arr[index].id;
+    // console.log(`The artist at index ${ID} is ${Name}.`);
+    return `The artist at index ${ID} is ${Name}.`;
   }
-  
+
+  getArtistByIndex(artists, 0);
   /**
 
 
+  // 🔴Skipping this for now. Im so lost on what they want done.🔴
 /* Task 4: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -237,7 +260,7 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
+function removeArtist(arr, index) {
     /* code here */
   }
   
@@ -246,11 +269,22 @@ function removeArtist(/*code here*/) {
 
 /* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */){
-
-    /* Code here */
-
+function get20s(arr, index){
+  for (let i = 0; i < arr.length; i++) {
+    const ArtistName = arr[index].name;
+    const ArtistDOB = arr[index].years;
+    if (ArtistName) {
+      
+    }
+    
   }
+  return {
+    name: ArtistName,
+    birthdate: ArtistBday
+    }
+  }
+
+  get20s(artists, )
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
