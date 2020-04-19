@@ -1,4 +1,499 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html *,
+body *,
+div *,
+span *,
+applet *,
+object *,
+iframe *,
+h1 *,
+h2 *,
+h3 *,
+h4 *,
+h5 *,
+h6 *,
+p *,
+blockquote *,
+pre *,
+a *,
+abbr *,
+acronym *,
+address *,
+big *,
+cite *,
+code *,
+del *,
+dfn *,
+em *,
+img *,
+ins *,
+kbd *,
+q *,
+s *,
+samp *,
+small *,
+strike *,
+strong *,
+sub *,
+sup *,
+tt *,
+var *,
+b *,
+u *,
+i *,
+center *,
+dl *,
+dt *,
+dd *,
+ol *,
+ul *,
+li *,
+fieldset *,
+form *,
+label *,
+legend *,
+table *,
+caption *,
+tbody *,
+tfoot *,
+thead *,
+tr *,
+th *,
+td *,
+article *,
+aside *,
+canvas *,
+details *,
+embed *,
+figure *,
+figcaption *,
+footer *,
+header *,
+hgroup *,
+menu *,
+nav *,
+output *,
+ruby *,
+section *,
+summary *,
+time *,
+mark *,
+audio *,
+video * {
+  box-sizing: border-box;
+}
+html *:before,
+body *:before,
+div *:before,
+span *:before,
+applet *:before,
+object *:before,
+iframe *:before,
+h1 *:before,
+h2 *:before,
+h3 *:before,
+h4 *:before,
+h5 *:before,
+h6 *:before,
+p *:before,
+blockquote *:before,
+pre *:before,
+a *:before,
+abbr *:before,
+acronym *:before,
+address *:before,
+big *:before,
+cite *:before,
+code *:before,
+del *:before,
+dfn *:before,
+em *:before,
+img *:before,
+ins *:before,
+kbd *:before,
+q *:before,
+s *:before,
+samp *:before,
+small *:before,
+strike *:before,
+strong *:before,
+sub *:before,
+sup *:before,
+tt *:before,
+var *:before,
+b *:before,
+u *:before,
+i *:before,
+center *:before,
+dl *:before,
+dt *:before,
+dd *:before,
+ol *:before,
+ul *:before,
+li *:before,
+fieldset *:before,
+form *:before,
+label *:before,
+legend *:before,
+table *:before,
+caption *:before,
+tbody *:before,
+tfoot *:before,
+thead *:before,
+tr *:before,
+th *:before,
+td *:before,
+article *:before,
+aside *:before,
+canvas *:before,
+details *:before,
+embed *:before,
+figure *:before,
+figcaption *:before,
+footer *:before,
+header *:before,
+hgroup *:before,
+menu *:before,
+nav *:before,
+output *:before,
+ruby *:before,
+section *:before,
+summary *:before,
+time *:before,
+mark *:before,
+audio *:before,
+video *:before,
+html *:afer,
+body *:afer,
+div *:afer,
+span *:afer,
+applet *:afer,
+object *:afer,
+iframe *:afer,
+h1 *:afer,
+h2 *:afer,
+h3 *:afer,
+h4 *:afer,
+h5 *:afer,
+h6 *:afer,
+p *:afer,
+blockquote *:afer,
+pre *:afer,
+a *:afer,
+abbr *:afer,
+acronym *:afer,
+address *:afer,
+big *:afer,
+cite *:afer,
+code *:afer,
+del *:afer,
+dfn *:afer,
+em *:afer,
+img *:afer,
+ins *:afer,
+kbd *:afer,
+q *:afer,
+s *:afer,
+samp *:afer,
+small *:afer,
+strike *:afer,
+strong *:afer,
+sub *:afer,
+sup *:afer,
+tt *:afer,
+var *:afer,
+b *:afer,
+u *:afer,
+i *:afer,
+center *:afer,
+dl *:afer,
+dt *:afer,
+dd *:afer,
+ol *:afer,
+ul *:afer,
+li *:afer,
+fieldset *:afer,
+form *:afer,
+label *:afer,
+legend *:afer,
+table *:afer,
+caption *:afer,
+tbody *:afer,
+tfoot *:afer,
+thead *:afer,
+tr *:afer,
+th *:afer,
+td *:afer,
+article *:afer,
+aside *:afer,
+canvas *:afer,
+details *:afer,
+embed *:afer,
+figure *:afer,
+figcaption *:afer,
+footer *:afer,
+header *:afer,
+hgroup *:afer,
+menu *:afer,
+nav *:afer,
+output *:afer,
+ruby *:afer,
+section *:afer,
+summary *:afer,
+time *:afer,
+mark *:afer,
+audio *:afer,
+video *:afer {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+​ body {
+  width: 900px;
+  margin-left: 15%;
+  color: #212529;
+}
+.text-button h1 {
+  font-size: 60px;
+  font-family: "Raleway", sans-serif;
+  color: #f9f9f9;
+}
+h2 {
+  font-size: 2rem;
+  color: #212529;
+  line-height: 2;
+}
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: #212529;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 3%;
+}
+a {
+  margin-top: 1.5%;
+  margin-left: 7%;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: #212529;
+}
+.top-nav {
+  margin-bottom: 5%;
+}
+.top-nav nav {
+  margin: 3%;
+  height: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.top-nav nav div {
+  font-family: "Raleway", sans-serif;
+  color: #212529;
+  padding: 2%;
+  line-height: 10px;
+}
+.home {
+  border-right: 1px solid gray;
+}
+.about {
+  border-right: 1px solid gray;
+}
+.title-container {
+  height: 500px;
+  width: 900px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 17%;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.artists-container {
+  margin-left: 10%;
+  margin-right: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-basis: auto;
+}
+.artist1 {
+  margin-top: 36px;
+  margin-left: 7%;
+  width: 40%;
+  justify-items: center;
+}
+.artist1 h2 {
+  display: flex;
+  align-self: center;
+  margin-left: 15%;
+}
+.artist1 img {
+  height: 300px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 4%;
+}
+.artist1 .bio1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin-left: 12px;
+}
+.artist1 .artist1-text {
+  margin-left: 4px;
+}
+.artist2 {
+  width: 40%;
+  margin-top: 7%;
+  margin-right: 10%;
+  padding-right: 5%;
+}
+.artist2 img {
+  height: 300px;
+  margin-left: 2%;
+  margin-bottom: 3%;
+}
+.bio2 {
+  width: 90%;
+  margin-top: 2%;
+  padding-left: 8px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+.artist2-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.artist2-text h2 {
+  margin-top: 2%;
+}
+.text-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-button .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button button {
+  width: 225px;
+  height: 36px;
+  border-radius: 4px;
+  border: 0.5px solid #212529;
+  margin-top: 24px;
+  font-weight: bold;
+}
