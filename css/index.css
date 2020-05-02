@@ -86,3 +86,20 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+header nav {
+  padding-left: 650px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+header nav #middleAnch {
+  padding: 3px;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+#home {
+  width: 1200px;
+  height: 600px;
+  padding-left: 100px ;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
