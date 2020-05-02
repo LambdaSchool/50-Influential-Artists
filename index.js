@@ -317,11 +317,24 @@ function addArtist(id, name, years, genre, bio){
 
 /* STRETCH 1: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */){
+function get20s(arr) {
+  var newArr = [];
 
-    /* Code here */
-
+  for (var i = 0; i < arr.length; i++) {
+    var currentArtist = arr[i];
+    var years = currentArtist.years;
+    var yearsArr = years.split(' ');
+    var yearBorn = parseInt(yearsArr[0]);
+    if (yearBorn >= 1800 && yearBorn <= 1900) {
+      newArr.push(currentArtist.name);
+    }
   }
+
+  return newArr;
+}
+
+// var output = get20s(artists);
+// console.log(output);
 
 /* STRETCH 2: Programtically console.log HTML element structure 
 
