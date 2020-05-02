@@ -208,11 +208,23 @@ const artists = [
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
 
+// for(var i =0; i<artists.lenth; i++){console.log(artists[i])}
+// console.log(artists[0].name)
+// console.log(artists[2].bio)
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-
+artists[8]={"id": 8,
+      "name": "Vincent van Gogh",
+      "years": "1853 – 1890",
+      "genre": "Post-Impressionism",
+      "nationality": "Dutch",
+      "bio": "Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. However, he was not commercially successful, and his suicide at 37 followed years of mental illness and poverty.",
+      "wikipedia": "http://en.wikipedia.org/wiki/Vincent_van_Gogh",
+      "paintings": 877
+    },
+console.log(artists);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -222,10 +234,11 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-    /* code here */
-  }
-  
+// function getArtistByIndex(id, name) {
+//   return(`The artist at index ${id} is ${name}.`)
+//   }
+//   console.log(getArtistByIndex(17,`El Greco`))
+
   /**
 
 
@@ -237,20 +250,36 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
+function removeArtist(id,array) {return(array.splice(id,1));
+}
+console.log(removeArtist(18,artists),artists)
+
   
   /**
 
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
+// function lotsOfArt(array){
+//     if (array.paintings>100){return(array.name)}
+// }
+// let bigArtists=[
+//   lotsOfArt(artists[0]),
+//   lotsOfArt(artists[5]),
+//   lotsOfArt(artists[8]),
+//   lotsOfArt(artists[9]),
+//   lotsOfArt(artists[10]),
+//   lotsOfArt(artists[11]),
+//   lotsOfArt(artists[12]),
+//   lotsOfArt(artists[13]),
+//   lotsOfArt(artists[14]),
+//   lotsOfArt(artists[15]),
+//   lotsOfArt(artists[16]),
+//   lotsOfArt(artists[17]),
+//   lotsOfArt(artists[18])
+// ]
 
-    /* Code here */
-
-  }
+// console.log(bigArtists)
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
@@ -262,11 +291,19 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
-
+function addArtist(id,name,years,genre,nationality,bio)
+{
+  artists.push({
+    id:id,
+    name:name,
+    years:years,
+    genre:genre,
+    nationality:nationality,
+    bio:bio
   }
+  )
+  }
+  console.log(addArtist(20,`Terry`,`current-day`,`web design`,`American`,`lorem ipsum`),artists)
 
 
 
