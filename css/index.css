@@ -86,3 +86,10 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+.butt-ton {
+  background-color: #efefef;
+  border: #787878 1px ridge;
+  border-radius: 2px;
+  color: #111111;
+  padding: 0.4em 1em;
+}
