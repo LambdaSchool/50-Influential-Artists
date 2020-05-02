@@ -130,6 +130,11 @@ body .title-container img {
   width: 80%;
   height: auto;
 }
+@media (max-width: 1140px) {
+  body .title-container img {
+    margin-bottom: 5%;
+  }
+}
 body .title-container .img-content {
   position: absolute;
   display: flex;
@@ -162,14 +167,23 @@ body .artists-container {
 }
 body .artists-container .artists-container-content {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   border-top: 2px solid gray;
   padding-top: 2%;
 }
+@media (max-width: 1140px) {
+  body .artists-container .artists-container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8%;
+  }
+}
 body .artists-container .artists-container-content .artist {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   width: 30%;
   margin: 0 10%;
 }
@@ -177,6 +191,12 @@ body .artists-container .artists-container-content .artist img {
   width: auto;
   height: 35%;
   border-radius: 0.5rem;
+}
+@media (max-width: 1140px) {
+  body .artists-container .artists-container-content .artist img {
+    width: 175%;
+    height: auto;
+  }
 }
 body .artists-container .artists-container-content .artist a {
   text-align: center;
@@ -186,10 +206,22 @@ body .artists-container .artists-container-content .artist a {
   color: gray;
   font-size: 1.5rem;
 }
+@media (max-width: 1140px) {
+  body .artists-container .artists-container-content .artist a {
+    margin-top: 20%;
+  }
+}
 body .artists-container .artists-container-content .artist .bio {
   width: 115%;
   line-height: 1.4rem;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   flex-wrap: wrap;
+}
+@media (max-width: 1140px) {
+  body .artists-container .artists-container-content .artist .bio {
+    margin: 15% 0 25% 0;
+    border-bottom: 2px solid gray;
+    padding-bottom: 20%;
+  }
 }

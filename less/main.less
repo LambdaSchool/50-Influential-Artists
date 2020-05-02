@@ -8,6 +8,10 @@ body {
     img {
       width: 80%;
       height: auto;
+
+      @media @mobile {
+        margin-bottom: 5%;
+      }
     }
 
     .img-content {
@@ -47,12 +51,22 @@ body {
     
     .artists-container-content {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       border-top: 2px solid @gray;
       padding-top: 2%;
 
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8%;
+      }
+
       .artist {
-        .displayFlex(column, center);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 30%;
         margin: 0 10%;
 
@@ -60,6 +74,11 @@ body {
           width: auto;
           height: 35%;
           border-radius: 0.5rem;
+
+          @media @mobile {
+            width: 175%;
+            height: auto;
+          }
         }
 
         a {
@@ -69,6 +88,10 @@ body {
           text-decoration: none;
           color: @gray;
           font-size: 1.5rem;
+
+          @media @mobile {
+            margin-top: 20%;
+          }
         }
 
         .bio {
@@ -77,6 +100,12 @@ body {
           font-family: @fontFam;
           text-align: center;
           flex-wrap: wrap;
+
+          @media @mobile {
+            margin: 15% 0 25% 0;
+            border-bottom: 2px solid @gray;
+            padding-bottom: 20%;
+          }
         }
       }
     }
