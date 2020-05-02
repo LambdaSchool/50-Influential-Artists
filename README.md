@@ -25,10 +25,29 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
-2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+A shorthand method to quickly compose CSS.
+
+
+2. What is your favorite concept in preprocessing?
+
+I really like the ability to group colors and change them out at will.
+
+ What is the concept that gives you the most trouble?
+
+Utilizing variables within Mixins. It always seems like it fails for me.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+A variable is a name given to data needing introduced.
+
+
 4. What is the purpose of using functions in code?
+
+to declare code thats easily reused.
+
 5. What is a JSON data?
+
+JSON is a type of javascript (javascript object notation) most commonly used to store data that will move or be accessed by another program  (server, middleman, etc.). It is standardized, open source document format. In fact, it could almost be described as the PDF of web files.
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -68,7 +87,7 @@ Follow these steps to set up your project:
 7.cta.less
 ```
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 #### Home Page - Desktop HTML & LESS
 
