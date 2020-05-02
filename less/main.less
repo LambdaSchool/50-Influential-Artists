@@ -1,0 +1,88 @@
+body {
+  width: 100%;
+  
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 80%;
+      height: auto;
+    }
+
+    .img-content {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      h1 {
+        font-size: 5rem;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 75%;
+        text-align: center;
+        color: white;
+        margin-bottom: 1.3%;
+      }
+
+      button {
+        font-size: 1.3rem;
+        padding: 1% 4%;
+        border-radius: 0.3rem;
+        color: gray;
+        outline: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+
+        &:hover {
+          background-color: darken(#ffffff, 15%);
+        }
+      }
+    }
+  }
+
+  .artists-container {
+    display: flex;
+    margin: 3%;
+    
+    .artists-container-content {
+      display: flex;
+      justify-content: center;
+      border-top: 2px solid gray;
+      padding-top: 2%;
+
+      .artist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        margin: 0 10%;
+
+        img {
+          width: auto;
+          height: 35%;
+          border-radius: 0.5rem;
+        }
+
+        a {
+          text-align: center;
+          margin: 5% 0;
+          font-family: Arial, Helvetica, sans-serif;
+          text-decoration: none;
+          color: gray;
+          font-size: 1.5rem;
+        }
+
+        .bio {
+          width: 115%;
+          line-height: 1.4rem;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
