@@ -1,0 +1,26 @@
+header {
+  width: 100%;
+  .displayFlex(row, center);
+
+  nav {
+    width: 40%;
+    .displayFlex(row, center);
+    margin: 3% 0;
+
+    a {
+      // font-size: @aSize;
+      .fontFormat(@gray, @aSize);
+      margin: 0 3%;
+      text-decoration: none;
+
+      &:hover {
+        font-weight: 600;
+        color: @hoverNav;
+      }
+    }
+
+    p {
+      .fontFormat(@gray, @navP);
+    }
+  }
+}

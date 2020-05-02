@@ -1,0 +1,113 @@
+body {
+  width: 100%;
+  
+  .title-container {
+    .displayFlex(column, center);
+    align-items: center;
+
+    img {
+      width: 80%;
+      height: auto;
+
+      @media @mobile {
+        margin-bottom: 5%;
+      }
+    }
+
+    .img-content {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      h1 {
+        font-size: 5rem;
+        font-weight: 600;
+        font-family: @fontFam;
+        width: 75%;
+        text-align: center;
+        color: @white;
+        margin-bottom: 1.3%;
+      }
+
+      button {
+        font-size: 1.3rem;
+        padding: 1% 4%;
+        border-radius: 0.3rem;
+        color: @gray;
+        outline: none;
+        box-shadow: @shadow;
+
+        &:hover {
+          background-color: @hoverBtn;
+        }
+      }
+    }
+  }
+
+  .artists-container {
+    display: flex;
+    margin: 3%;
+    
+    .artists-container-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border-top: 2px solid @gray;
+      padding-top: 2%;
+
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8%;
+      }
+
+      .artist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        margin: 0 10%;
+
+        img {
+          width: auto;
+          height: 35%;
+          border-radius: 0.5rem;
+
+          @media @mobile {
+            width: 175%;
+            height: auto;
+          }
+        }
+
+        a {
+          text-align: center;
+          margin: 5% 0;
+          font-family: @fontFam;
+          text-decoration: none;
+          color: @gray;
+          font-size: 1.5rem;
+
+          @media @mobile {
+            margin-top: 20%;
+          }
+        }
+
+        .bio {
+          width: 115%;
+          line-height: 1.4rem;
+          font-family: @fontFam;
+          text-align: center;
+          flex-wrap: wrap;
+
+          @media @mobile {
+            margin: 15% 0 25% 0;
+            border-bottom: 2px solid @gray;
+            padding-bottom: 20%;
+          }
+        }
+      }
+    }
+  }
+}
