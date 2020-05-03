@@ -1,27 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
 .title-container{
         position: relative;
         text-align: center;
         color: white;
+        display: flex;
+        flex-wrap: wrap;
       }
 
-      .bio {
-          font-family: 'Raleway', sans-serif;
-          display: flex; 
-          flex-direction: column;
-          margin: auto;
-          width: 38%;
-          column-count: 2;
+.bio2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    display: flex; 
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    flex-wrap: wrap; 
+}
         
 
-      .Front-Side {
-       width: 30%;
-       display: flex;
-       align-items: center;
-       justify-content: center;
+.Front-Side {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    flex-wrap: wrap;
       }
 
-      .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.artist-container{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+.img1{
+    width: 85%;
+    float: left; 
+}
+
+.img2{
+    width: 85%;
+    float: right; }
+
+.artist {
+    clear: both;
+}    
+
+.bio1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
