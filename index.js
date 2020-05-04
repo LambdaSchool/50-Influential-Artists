@@ -275,12 +275,19 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
-
+function addArtist(id,name,years,genre,nationality,bio)
+{
+  artists.push({
+    id:id,
+    name:name,
+    years:years,
+    genre:genre,
+    nationality:nationality,
+    bio:bio
   }
-
+  )
+  }
+  console.log(addArtist(21,`Asha Gross`,`1987-2020`,`Web Design`,`American`,`Doggo ipsum aqua doggo noodle horse heckin good boys adorable doggo, clouds heckin very taste wow, length boy doggo. `),artists)
 
 
 
