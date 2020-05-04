@@ -1,11 +1,26 @@
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .custom-layout(flex,center,center);
   
     nav a {
         padding: 1rem;
-        color: @font-color;
+        color: black;
+        background-color: white;
         text-decoration: none;
     }     
 }
+
+nav {
+    .custom-layout(flex, center);
+}
+
+.btn-class {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: white;
+    color: @shark;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: darken(white, 80%)
+    }
+  }
