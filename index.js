@@ -248,17 +248,21 @@ function removeArtist(arr, id) {
   }
 }
  var arDelete = removeArtist(artists, 0);
- console.log(arDelete);
+ console.log(artists);
   
   /**
 
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
-
-    /* Code here */
-
+function lotsOfArt(artists){
+  let arr2 = [];
+  artists.forEach(function(element) {
+    if(artists.paintings > 100) {
+      arr2.push(element);
+    }
+  });
+  return arr2;
   }
 
 
