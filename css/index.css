@@ -91,12 +91,12 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-header {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header a {
+header nav nav a {
   padding: 1rem;
   color: #212529;
   text-decoration: none;
