@@ -1,0 +1,198 @@
+.flex {
+  display: flex;
+}
+.absolPos {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+header nav {
+  padding-left: 650px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 4px;
+}
+header nav #middleAnch {
+  padding: 2px;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+@media (max-width: 500px) {
+  header nav {
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  header nav #middleAnch {
+    border: none;
+  }
+}
+#home {
+  width: 1200px;
+  height: 600px;
+  padding-left: 100px ;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+@media (max-width: 500px) {
+  #home {
+    width: 400px;
+    height: 300px;
+    padding-left: 40px;
+  }
+}
+.topP {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  top: 50%;
+  color: white;
+}
+.bottomP {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  top: 55%;
+  color: white;
+}
+button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  font-family: sans-serif;
+  color: black;
+  top: 60%;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.bottomPics {
+  width: 300px;
+  height: 275px;
+}
+.artists-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 50px;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .artists-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.artist {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 325px;
+}
+.bio {
+  text-decoration: none;
+  color: black;
+}
+img:hover {
+  opacity: 80%;
+}
