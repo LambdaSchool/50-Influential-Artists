@@ -25,10 +25,31 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
-2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    It's another language that is used to generate your CSS file. It enables you to
+    increase productivity and reduce errors, as well as simplify the process of editing CSS code throughout all the content of a website. The language makes more options available to you.
+
+2. What is your favorite concept in preprocessing?
+
+    It enables you to design styles up front and then easily apply/edit those styles to an entire website.
+
+ What is the concept that gives you the most trouble?
+
+    Nesting.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+    It's a named storage area, or container, for holding a value. That value can be a variety of things, such as a number, phrase, or the result of a calculation that will be used in other areas of your code.
+
 4. What is the purpose of using functions in code?
+
+    We create functions so we can reuse that code in other areas of our projects.
+
 5. What is a JSON data?
+
+    JSON stands for JavaScript Object Notation.
+    JSON data is written as name/value pairs, just like JavaScript object properties.
+    JSON is "self-describing" and easy to understand.
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -48,7 +69,7 @@ Follow these steps to set up your project:
 #### Preprocessor Set up
 
 * [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] In your project's root folder, run the following command `less-watch-compiler less css index.less`
 * [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
 * [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
@@ -69,11 +90,12 @@ Follow these steps to set up your project:
 ```
 
 _You will know everything is working properly when you see the styles enabled for the provided content._  
+I HAD A TYPO SO THE IMPORT IS ALL MESSED UP.
 
 #### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [x] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [x] Add a viewport meta tag to the head of your index.html page
 * [ ] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 * [ ] Navigation Styles: Use the `navigation.less` file for styling.
 * [ ] Main Content Styles: Use the `main.less` file for styling
