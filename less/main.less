@@ -1,3 +1,7 @@
+header {
+    margin: 2rem 0rem 2rem 0rem;
+}
+
 .title-container {
     display: flex;
     justify-content: center;
@@ -9,12 +13,48 @@
     background-size: cover;
     margin: 0 auto;
     flex-direction: column;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blanchedalmond;
+    margin-bottom: 2.5rem;
+    
 
     button {
         padding: 1rem;
-    }
+    }  
+}
 
-
+.artists-container {
+    display: flex;  
+  
+  .artist {
+    display: flex;
+    flex: 45%;
+    padding: 5;
+    justify-content: center;
+    margin: 2.5rem;
+    flex-direction: column;
+    align-items: center;
     
+    img {
+        
+        max-width: 40%;
+        height: auto;
+        margin: 2.5rem;
+        &:hover {
+            opacity: 80%; 
+        }
+        
+    }
+  }
+}
+
+a { 
+    font-size: 1.5rem;
+    text-decoration: none;
+    justify-content: center;
+}
+
+bio {
 
 }
