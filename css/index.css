@@ -1,4 +1,152 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: black;
+  padding-top: 2.5rem;
+}
+.navContainer .active {
+  padding: 0.25rem;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+header {
+  margin: 2rem 0rem 2rem 0rem;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  height: 500px;
+  background-image: url(/assets/home.png);
+  background-size: cover;
+  margin: 0 auto;
+  flex-direction: column;
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blanchedalmond;
+  margin-bottom: 2.5rem;
+}
+.title-container button {
+  padding: 1rem;
+}
+.artists-container {
+  display: flex;
+}
+.artists-container .artist {
+  display: flex;
+  flex: 45%;
+  padding: 5;
+  justify-content: center;
+  margin: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+.artists-container .artist img {
+  max-width: 40%;
+  height: auto;
+  margin: 2.5rem;
+}
+.artists-container .artist img:hover {
+  opacity: 80%;
+}
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  justify-content: center;
+}

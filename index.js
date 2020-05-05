@@ -205,12 +205,18 @@ const artists = [
 
 /* Task 1: Practice accessing data above by console.log-ing following items:
 
-(1) Name of the first artist in the array
-(2) Bio of the third artist in the array */
+(1) Name of the first artist in the array */
+
+console.log(artists[0].name);
 
 
+// (2) Bio of the third artist in the array */
 
+console.log(artists[2].bio);
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+artists.slice(8)[0].name = "Vincent Van Gogh"
+console.log(artists[8]);
+
 
 
 
@@ -221,10 +227,15 @@ const artists = [
  * 
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
+ * 
 */
-function getArtistByIndex(id, name) {
-    /* code here */
-  }
+
+// function getArtistByIndex(artistsArray, desiredIndexInArray) {
+//   let id = desiredIndexInArray;
+//   let name = artistsArray[id].name;
+//   return `The artist at index ${id} is ${name}.`
+// }
+//   console.log(getArtistByIndex(artists, 8));
   
   /**
 
@@ -237,14 +248,23 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(artArray, indexNumber) {
+    let remove = artArray[indexNumber];
+    
+    if (artArray === "artists") {
+      console.log(`${artists[indexNumber].name} has been removed.`);
+      artists[0] = remove;
+      artists.shift(remove);
+
+    } else {
+      console.log('Sorry, please recheck the artists directory.');
+    }
   }
-  
-  /**
+
+   console.log(removeArtist(artists, 10));
 
 
-/* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
+   /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
 function lotsOfArt(/* Code here */){
 

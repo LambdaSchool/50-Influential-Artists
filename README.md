@@ -25,10 +25,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+
+I would say preprocessing is a javascript built program used to simplify writing traditional css, which is useful for managing a code base. The preprocessor uses a compiler to take the .lss code and compiles it into css for the browser to read.
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+My favorite concept is variables and mixins. What gave me the most problems was media query variables.
+
+
 3. How would you explain the concept of a variable to someone new to programming?
+A variable is a piece of code you write that can be utilized throughout your code base to make changes instantaneously throughout your site. Say for instance if you need your font to change to a different consistent color, you can change one variable and it will change the whole code base. NICE!
+
+
 4. What is the purpose of using functions in code?
+A function makes a website more dynamic and lets you make a series of changes in order to accommplish a goal. For example you may want to write a function to convert one unit to another, which would let you accomplish one goal that could essentially lead to completing a bigger goal.
+
+
 5. What is a JSON data?
+JavaScript Object Notation - a data set that makes reading and writing easy by humans, and which is easily readable by machines.
+
+
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -72,15 +87,15 @@ _You will know everything is working properly when you see the styles enabled fo
 
 #### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
-* [ ] Add a viewport meta tag to the head of your index.html page
-* [ ] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
-* [ ] Main Content Styles: Use the `main.less` file for styling
+* [done] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [done] Add a viewport meta tag to the head of your index.html page
+* [done] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [done] Navigation Styles: Use the `navigation.less` file for styling.
+* [done] Main Content Styles: Use the `main.less` file for styling
 * [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 * [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
 * [ ] Use at least 2 parameters to create your button
-* [ ] Create a hover state that changes the opacity of images to 80%
+* [done] Create a hover state that changes the opacity of images to 80%
 * [ ] Use good coding practices including adding responsive breakpoints to your code with media queries
 
 ### Task 2b: Minimum Viable Product - JavaScript
