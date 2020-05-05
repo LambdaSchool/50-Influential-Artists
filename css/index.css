@@ -1,6 +1,6 @@
-.h1 {
+.title {
   color: black;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
 }
 html,
@@ -91,21 +91,29 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 header nav nav a {
   padding: 1rem;
-  color: #212529;
+  color: black;
+  background-color: white;
   text-decoration: none;
 }
 .btn-class {
   padding: 10px 40px;
   border-radius: 10px;
   background-color: white;
-  color: grey;
+  color: #212529;
   cursor: pointer;
 }
 .btn-class:hover {
