@@ -207,7 +207,15 @@ const artists = [
 
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
+var artist = ["Amedeo Modigliani", "Vasiliy Kandinskiye", "Diego Rivera"]; 
+var artist = new Array("Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera");  // declaration
 
+alert(artist[1]);             // access value at index, first item being [0]
+artist[0] = "Amedeo Modigliani";    // change the first item
+
+for (var i = 0; i < artist.length; i++) {     // parsing with array.length
+    console.log(artist[i]);
+}
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
