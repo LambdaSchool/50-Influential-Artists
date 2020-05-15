@@ -113,23 +113,27 @@ nav a.homeLink {
   font-weight: bold;
 }
 .title-container {
-  width: 800px;
-  height: 512px;
+  background: url("../assets/home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-items: center;
   margin: auto;
   align-items: center;
+  padding: 300px 0;
+}
+@media (max-width:500px) {
+  .title-container {
+    padding: 150px 0;
+  }
 }
 .title-container h1 {
   font-size: 3rem;
   color: white;
-  font-familY: arial;
+  font-family: arial;
   text-align: center;
-}
-.title-container button {
-  padding: 8px;
 }
 .artists-container {
   display: flex;
@@ -139,6 +143,7 @@ nav a.homeLink {
 }
 @media (max-width:500px) {
   .artists-container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -169,4 +174,9 @@ nav a.homeLink {
 .bio {
   text-align: center;
   margin: 8px;
+}
+.title-container button {
+  padding: 8px;
+  background: green;
+  color: white;
 }
