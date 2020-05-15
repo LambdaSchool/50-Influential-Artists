@@ -266,11 +266,23 @@ return `The artist ${NAME} has been removed at ${ID} `
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(arr){
 
     /* Code here */
 
+   for(let i=0; i<arr.length; i++){
+    // console.log(arr[i].name)
+       //console.log(arr[i].paintings)
+    if(arr[i].paintings>100){
+      console.log(arr[i].name);
+    }
+  
+
+   }
+
   }
+
+ console.log(lotsOfArt(artists)) 
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
