@@ -263,15 +263,17 @@ console.log(getArtistByIndex(0, 0));
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(id, name) {
-  const ID = Object.values(artists)[id].id;
-  const NAME = Object.values(artists)[name].name;
+let newArtist = [...artists]; // spread operator to make a copy
 
-  delete artists[0].name;
+function removeArtist(id, name) {
+  const ID = Object.values(newArtist)[id].id;
+  const NAME = Object.values(newArtist)[name].name;
+
+  delete newArtist[0].name;
   return `The artist ${NAME} has been removed at ${ID} `;
 }
 console.log(removeArtist(0, 0));
-console.log(`Deleted artist is ${artists[0].name}`);
+console.log(`Deleted artist is ${newArtist[0].name}`);
 /**
 
 
@@ -300,9 +302,19 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */) {
-  /* Code here */
+function addArtist() {
+  const cam = {
+    id: 21,
+    name: "Cameron",
+    years: 1989,
+    genre: "Web Design",
+    nationality: "American",
+    bio: "Donec quis suscipit tellus. Donec eget lectus molestie",
+  };
+  return artists.push(cam);
 }
+addArtist();
+console.log(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
