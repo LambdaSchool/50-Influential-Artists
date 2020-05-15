@@ -1,3 +1,5 @@
+// THIS FILE IS BEING INTERPRETED AS A DOCUMENT AND CONSOLE DOESN'T WORK. CAN NOT COMPLETE.
+
 const artists = [
     {
       "id": 0,
@@ -208,7 +210,13 @@ const artists = [
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
 
+// function firstArtist(artists) {
+//   var first = artists[0];
+//   return first;
+// }
 
+//console.log(firstArtist());
+console.log('test'); // SIMPLE TEST DOES NOT WORK
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
