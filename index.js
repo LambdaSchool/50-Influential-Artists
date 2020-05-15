@@ -250,10 +250,17 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(id,name) {
+
+  const ID=Object.values(artists)[id].id;
+  const NAME= Object.values(artists)[name].name;
+
+  delete artists[0].name;
+return `The artist ${NAME} has been removed at ${ID} `
+
   }
-  
+  console.log(removeArtist(0,0));
+  console.log(`Deleted artist is ${artists[0].name}`)
   /**
 
 
