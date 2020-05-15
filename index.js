@@ -1,3 +1,5 @@
+// THIS FILE IS BEING INTERPRETED AS A DOCUMENT AND CONSOLE DOESN'T WORK. CAN NOT COMPLETE
+
 const artists = [
     {
       "id": 0,
@@ -208,11 +210,34 @@ const artists = [
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
 
+function firstArtist(artists) {
+  var first = artists[0].name;
+  return first;
+}
 
+function thirdArtist(artists) {
+  var third = artists[2].bio;
+  return third;
+}
+
+console.log(firstArtist(artists));
+console.log(thirdArtist(artists));
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+function fixSpelling(artists) {
 
+  for(i = 0; i <= artists.length - 1; i++) {
+    if(artists[i].name === 'Vincent van Dough') {
+      artists[i].name = 'Vincent Van Gogh';
+      vincent = artists[i].name;
+      return vincent;
+    }
+  }
+
+}
+
+console.log(fixSpelling(artists))
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -222,10 +247,14 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-    /* code here */
+function getArtistByIndex(artists, indexNumber) {
+    
+  return 'The artist at index ' + indexNumber + ' is ' + artists[indexNumber].name;
+
   }
   
+console.log(getArtistByIndex(artists,0)); // Change Number to Test
+
   /**
 
 
@@ -236,24 +265,41 @@ function getArtistByIndex(id, name) {
  * 
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
+ * const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+const i = arr.indexOf(5);
+arr.splice(i, 1); // => [1, 2, 3, 4, 6, 7, 8, 9, 0]
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
+function removeArtist(artists,numberOfIndex) {
+  
+  i = artists.splice(numberOfIndex - 1,1);
+
+  return artists;
+
+}
+
+console.log(removeArtist(artists,6));
   
   /**
 
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
-
-    /* Code here */
+function lotsOfArt(artists){
+    manyPaintings = [];
+    for(i = 0; i <= artists.length - 1; i++) {
+      if(artists[i].paintings > 100) {
+        manyPaintings.push(artists[i].name);
+      }
+    }
+    return manyPaintings;
 
   }
 
+  console.log(lotsOfArt(artists));
 
-/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
+
+/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array.
+Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
 id: 21
 name: Your Name Here, 
@@ -262,25 +308,43 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(artists){
 
-    /* Code here */
-
+    artists.push(
+      {
+        id: 21,
+        name: 'Donald Faulknor',
+        years: '1982 - 15',
+        genre: 'Web Design',
+        nationality: 'American',
+        bio: 'Father of 4 beautiful children'
+      }
+    )
+      return artists;
   }
 
-
+console.log(addArtist(artists));
 
 
 
 // 🎨🎨 STRETCH 🎨🎨//
 
-/* STRETCH 1: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
+/* STRETCH 1: Create a function called get20s() that takes data as an argument and returns an array with names
+of artists who were born the 20th century (1800-1900) */
+// string.charAt(0)
 
-function get20s(/* Code here */){
+// function get20s(artists){
+//     getArray = [];
+//     for(i = 0; i <= artists.length - 1; i++) {
+//       var secondNum = artists[i].charAt(1); // Doesn't Work as every documentation explains. charAt should be blue
+//       if(secondNum === 8) {
+//         getArray.push(artists.name);
+//       }
+//     }
+//     return getArray;
+//   }
 
-    /* Code here */
-
-  }
+//   console.log(get20s(artists));
 
 /* STRETCH 2: Programtically console.log HTML element structure 
 
