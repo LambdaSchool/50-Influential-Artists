@@ -307,24 +307,41 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function lotsOfArt(artArr) {
-  let lotsOfPaintArr = [];
+function addArtist(newInfoArr) {
+  let newArtistArr = artists;
 
-  for (let i = 0; i < artArr.length; i++) {
-    if (artArr[i].paintings > 100) {
-      lotsOfPaintArr.push(artArr[i].name);
-    }
-  }
+  newArtistArr.push(newInfoArr);
 
-  return lotsOfPaintArr;
+  console.log(newArtistArr);
+  return newArtistArr;
 }
+
+addArtist({
+  id: 21,
+  name: "Darian Purry",
+  years: "1998 - 2020",
+  genre: "Full Stack",
+  nationality: "American",
+  bio:
+      "Darian is awesome and cool. Lorem Ipsum. Darian is awesome and cool. Lorem IpsumDarian is awesome and cool. Lorem IpsumDarian is awesome and cool. Lorem IpsumDarian is awesome and cool. Lorem IpsumDarian is awesome and cool. Lorem Ipsum",
+
+});
+
+
 
 // 🎨🎨 STRETCH 🎨🎨//
 
 /* STRETCH 1: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */) {
-  /* Code here */
+function get20s(artArr) {
+  let get20s = [];
+
+  for (let i = 0; i < artArr.length; i++) {
+    if(artArr[i].paintings > 100) {
+      get20s.push(artArr[i].name);
+    }
+  }
+  return get20s;
 }
 
 /* STRETCH 2: Programtically console.log HTML element structure 
