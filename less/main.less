@@ -1,0 +1,64 @@
+// Body Main Styles
+
+
+
+.artists-container{
+
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 5rem;
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        background-color:white;
+
+        width: 100%;
+      }
+
+
+      @media @tablet {
+        display: flex;
+        flex-direction: column;
+       
+      }
+      
+    
+    .artist{
+        margin: 2rem 5rem;
+        
+        margin-left: 5rem;
+
+        a{
+            text-decoration: none;
+            
+            width: 100%;
+        }
+
+        &:first-child{
+            width: 55%;
+        }
+        &:nth-child(2){
+            width: 58%;
+        }
+
+    }
+
+    img{
+        width: 100%;
+    }
+    .bio{
+        width: 80%;
+        font-family: @main-font;
+        font-size: 200;
+        text-align: center;
+
+       
+        
+      
+    }
+
+
+    
+}
