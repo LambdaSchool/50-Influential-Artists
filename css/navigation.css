@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+header Nav {
+  margin: 0 auto;
+}
+header Nav a {
+  padding: 2rem;
+}
+header Nav a .two {
+  padding: 200rem;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
